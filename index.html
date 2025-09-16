@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ग्राम साथी - गाँव की जानकारी, एक क्लिक में</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">ग्राम साथी</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">होम</a></li>
+                    <li><a href="#schemes">सरकारी योजनाएँ</a></li>
+                    <li><a href="#rates">मंडी भाव</a></li>
+                    <li><a href="#news">गाँव की खबरें</a></li>
+                    <li><a href="#contact">संपर्क करें</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1>अपने गाँव से जुड़ें, अब और भी आसान।</h1>
+            <p>सरकारी योजनाओं, मंडी भाव और ताज़ा खबरों की जानकारी पाएं।</p>
+            <a href="#register-modal" class="cta-button">अभी रजिस्टर करें</a>
+            <a href="#schemes" class="cta-button secondary-button">और जानें</a>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">हमारी सेवाएँ</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="सरकारी योजनाएँ">
+                    <h3>सरकारी योजनाएँ</h3>
+                    <p>सरकारी योजनाओं की जानकारी।</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="मंडी भाव">
+                    <h3>मंडी भाव</h3>
+                    <p>रोज़ाना के मंडी भाव।</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" alt="गाँव की खबरें">
+                    <h3>गाँव की खबरें</h3>
+                    <p>स्थानीय खबरें और इवेंट्स।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us-section">
+        <div class="container">
+            <h2 class="section-title">क्यों 'ग्राम साथी'?</h2>
+            <ul>
+                <li><p><strong>विश्वसनीय जानकारी:</strong> हमारी जानकारी विश्वसनीय और सत्यापित होती है।</p></li>
+                <li><p><strong>उपयोग में आसान:</strong> वेबसाइट का डिज़ाइन सरल और उपयोग में आसान है।</p></li>
+                <li><p><strong>आपकी भाषा में:</strong> सभी जानकारी हिंदी में उपलब्ध है, ताकि हर कोई इसे समझ सके।</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="schemes-section" id="schemes">
+        <div class="container">
+            <h2 class="section-title">सरकारी योजनाएँ</h2>
+            <div class="search-filter-bar">
+                <input type="text" id="scheme-search" placeholder="योजना का नाम खोजें...">
+            </div>
+            <div id="schemes-list">
+                </div>
+        </div>
+    </section>
+    
+    <section class="mandi-section" id="rates">
+        <div class="container">
+            <h2 class="section-title">मंडी भाव</h2>
+            <table id="mandi-table">
+                <thead>
+                    <tr>
+                        <th>फसल</th>
+                        <th>न्यूनतम मूल्य</th>
+                        <th>अधिकतम मूल्य</th>
+                        <th>सामान्य मूल्य</th>
+                        <th>मंडी का नाम</th>
+                    </tr>
+                </thead>
+                <tbody id="mandi-rates-body">
+                    </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="news-section" id="news">
+        <div class="container">
+            <h2 class="section-title">गाँव की खबरें</h2>
+            <div class="news-cards" id="news-list">
+                </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">संपर्क करें</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="आपका नाम" required>
+                <input type="email" name="email" placeholder="आपका ईमेल" required>
+                <input type="text" name="subject" placeholder="विषय">
+                <textarea name="message" placeholder="आपका संदेश" rows="5" required></textarea>
+                <button type="submit" class="cta-button">भेजें</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>ईमेल:</strong> info@gramsathi.com</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="feedback-section" id="feedback">
+        <div class="container">
+            <h2 class="section-title">सुझाव दें</h2>
+            <form id="feedback-form">
+                <textarea name="feedback" placeholder="अपना सुझाव यहाँ लिखें..." rows="4" required></textarea>
+                <button type="submit" class="cta-button">सुझाव भेजें</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">प्राइवेसी पॉलिसी</a>
+                <a href="#">नियम और शर्तें</a>
+            </div>
+            <p>&copy; 2024 ग्राम साथी। सर्वाधिकार सुरक्षित।</p>
+            <div class="social-media">
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Facebook"></a>
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+                <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>रजिस्टर करें</h2>
+            <form id="registration-form">
+                <input type="text" name="name" placeholder="आपका नाम" required>
+                <input type="text" name="village" placeholder="गाँव का नाम" required>
+                <input type="tel" name="mobile" placeholder="मोबाइल नंबर" required>
+                <button type="submit" class="cta-button">रजिस्टर करें</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
